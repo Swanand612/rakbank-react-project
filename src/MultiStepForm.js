@@ -50,6 +50,7 @@ const MultiStepForm = () => {
           {steps.map((_, index) => (
             <div
               key={index}
+              data-testid="dots"
               className={`dot ${index === currentStep ? 'active' : ''}`}
             ></div>
           ))}
@@ -64,6 +65,7 @@ const MultiStepForm = () => {
         {options.map((option, index) => (
           <button
             key={index}
+            data-testid={`option-${option.icon}`}
             className="option-button"
             onClick={() => handleSelect(option.value)}
           >
