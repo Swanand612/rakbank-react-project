@@ -1,0 +1,170 @@
+{
+  "responses": [
+    {
+      "0": "good",
+      "id": "b58f"
+    },
+    {
+      "0": "good",
+      "id": "250c"
+    },
+    {
+      "0": "bad",
+      "id": "c9be"
+    },
+    {
+      "0": "somewhat_productive",
+      "id": "bfbd"
+    },
+    {
+      "0": "average",
+      "id": "867b"
+    },
+    {
+      "0": "bad",
+      "id": "0c61"
+    },
+    {
+      "0": "average",
+      "id": "be60"
+    },
+    {
+      "0": "good",
+      "id": "38d4"
+    },
+    {
+      "0": "average",
+      "id": "72f5"
+    },
+    {
+      "0": "bad",
+      "id": "9499"
+    },
+    {
+      "0": "good",
+      "id": "33aa"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "no",
+      "id": "47ab"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "partially",
+      "id": "db38"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "yes",
+      "id": "8f94"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "partially",
+      "id": "1e23"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "yes",
+      "id": "c318"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "no",
+      "id": "009d"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "partially",
+      "id": "001e"
+    },
+    {
+      "0": "bad",
+      "1": "not_productive",
+      "2": "yes",
+      "id": "0ef4"
+    },
+    {
+      "0": "bad",
+      "1": "somewhat_productive",
+      "2": "yes",
+      "id": "1fee"
+    },
+    {
+      "0": "bad",
+      "1": "somewhat_productive",
+      "2": "no",
+      "id": "afc7"
+    },
+    {
+      "0": "good",
+      "1": "very_productive",
+      "id": "3728"
+    },
+    {
+      "0": "good",
+      "1": "very_productive",
+      "2": "partially",
+      "id": "6518"
+    },
+    {
+      "0": "good",
+      "1": "very_productive",
+      "2": "no",
+      "id": "8d55"
+    },
+    {
+      "0": "average",
+      "1": "somewhat_productive",
+      "id": "2e02"
+    },
+    {
+      "0": "average",
+      "1": "somewhat_productive",
+      "2": "partially",
+      "id": "de12"
+    },
+    {
+      "0": "average",
+      "1": "somewhat_productive",
+      "2": "no",
+      "id": "929d"
+    },
+    {
+      "0": "average",
+      "1": "somewhat_productive",
+      "id": "d22c"
+    },
+    {
+      "0": "average",
+      "1": "somewhat_productive",
+      "2": "no",
+      "id": "0c3f"
+    },
+    {
+      "0": "average",
+      "1": "somewhat_productive",
+      "2": "partially",
+      "id": "8b72"
+    },
+    {
+      "0": "bad",
+      "1": "somewhat_productive",
+      "id": "46f6"
+    },
+    {
+      "0": "bad",
+      "1": "somewhat_productive",
+      "2": "yes",
+      "id": "3eca"
+    }
+  ]
+}
