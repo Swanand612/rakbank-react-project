@@ -240,6 +240,21 @@
       "id": "3u6ft4hcn",
       "question": "Did you achieve your goals?",
       "answer": "positive"
+    },
+    {
+      "id": "1em0r8e5n",
+      "question": "How was your week overall?",
+      "answer": "negative"
+    },
+    {
+      "id": "d4eqmvk5a",
+      "question": "How productive were you?",
+      "answer": "positive"
+    },
+    {
+      "id": "x2zcubojn",
+      "question": "Did you achieve your goals?",
+      "answer": "neutral"
     }
   ]
 }

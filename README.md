@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# MultiStepForm Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that implements a multi-step form with a custom vertical carousel and animated dot indicators. The form captures user responses and submits them to a mock API endpoint.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+- Multi-step form with vertical sliding animation
+- Emoji options for user responses
+- API call on each emoji click
+- Dot indicators to show the current question
+- Tailwind CSS for styling
+- Unit tests with React Testing Library and Jest
 
-### `npm start`
+# Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+    git clone https://github.com/yourusername/multistepform.git
+    cd multistepform
+```
 
-### `npm test`
+2. Install the dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+    npm install
+```
 
-### `npm run build`
+3. Install json-server globally to mock the API endpoint:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+    npm install -g json-server
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the mock API server:
 
-### `npm run eject`
+```bash
+    json-server --watch db.json --port 3001
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Start the React application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+    npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Open your browser and navigate to `http://localhost:3000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Running Tests
 
-## Learn More
+To run the unit tests, use the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+    npm test
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Project Structure
 
-### Code Splitting
+- `src/components/MultiStepForm.js`: The main component for the multi-step form.
+- `src/components/MultiStepForm.test.js`: Unit tests for the MultiStepForm component.
+- `src/styles.css`: CSS file for custom styles.
+- `db.json`: Mock database file for json-server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Usage
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The form slides through questions vertically.
+- Click on an emoji option to submit a response and move to the next question.
+- Dot indicators on the left show the current question.
