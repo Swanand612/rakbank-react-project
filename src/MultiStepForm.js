@@ -1,4 +1,3 @@
-// src/components/MultiStepForm.js
 import React, { useState } from 'react';
 import FormStep from './FormStep';
 
