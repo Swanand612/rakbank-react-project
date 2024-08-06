@@ -46,6 +46,14 @@ const MultiStepForm = () => {
   return (
     <div className="form-container">
       <div className="question-panel">
+        <div className="dot-indicators">
+          {steps.map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${index === currentStep ? 'active' : ''}`}
+            ></div>
+          ))}
+        </div>
         <TransitionGroup>
           <CSSTransition key={currentStep} timeout={500} classNames="slide">
             <div className="question">{steps[currentStep]}</div>

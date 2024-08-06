@@ -29,16 +29,28 @@ describe('MultiStepForm', () => {
     expect(screen.getByText('👎')).toBeInTheDocument();
   });
 
+  it('renders the dot indicators', () => {
+    render(<MultiStepForm />);
+    const dots = screen.getAllByRole('presentation');
+    expect(dots.length).toBe(3);
+    expect(dots[0]).toHaveClass('dot active');
+    expect(dots[1]).toHaveClass('dot');
+    expect(dots[2]).toHaveClass('dot');
+  });
+
   it('moves to the next question when an option is selected', () => {
     render(<MultiStepForm />);
     fireEvent.click(screen.getByText('👍'));
     expect(screen.getByText('How productive were you?')).toBeInTheDocument();
+    const dots = screen.getAllByRole('presentation');
+    expect(dots[0]).not.toHaveClass('dot active');
+    expect(dots[1]).toHaveClass('dot active');
   });
 
   it('submits the response for each question', async () => {
     render(<MultiStepForm />);
     
-    // Click through all steps
+    // Clicking through all steps
     fireEvent.click(screen.getByText('👍'));
     expect(global.fetch).toHaveBeenCalledWith(
       'http://localhost:3001/responses',
@@ -69,7 +81,11 @@ describe('MultiStepForm', () => {
       })
     );
 
-    await new Promise(resolve => setTimeout(resolve, 0)); // wait for the fetch to complete
+    await new Promise(resolve => setTimeout(resolve, 0));
     expect(screen.getByText('How was your week overall?')).toBeInTheDocument();
+    const dots = screen.getAllByRole('presentation');
+    expect(dots[0]).toHaveClass('dot active');
+    expect(dots[1]).toHaveClass('dot');
+    expect(dots[2]).toHaveClass('dot');
   });
 });
