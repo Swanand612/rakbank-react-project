@@ -16,8 +16,8 @@ This project is a React application that implements a multi-step form with a cus
 1. Clone the repository:
 
 ```bash
-    git clone https://github.com/yourusername/multistepform.git
-    cd multistepform
+    git clone https://github.com/Swanand612/rakbank-react-project.git
+    cd rakbank-react-project
 ```
 
 2. Install the dependencies:
