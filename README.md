@@ -58,8 +58,8 @@ To run the unit tests, use the following command:
 
 # Project Structure
 
-- `src/components/MultiStepForm.js`: The main component for the multi-step form.
-- `src/components/MultiStepForm.test.js`: Unit tests for the MultiStepForm component.
+- `src/MultiStepForm.js`: The main component for the multi-step form.
+- `src/MultiStepForm.test.js`: Unit tests for the MultiStepForm component.
 - `src/styles.css`: CSS file for custom styles.
 - `db.json`: Mock database file for json-server.
 
